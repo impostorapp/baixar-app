@@ -1,0 +1,54 @@
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  /* color: #0752a5; */
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('../assets/images/white-bricks.jpg');
+  background-size: auto 100%;
+  padding: 0 16%;
+  height: 100vh;
+}
+
+main div {
+  flex: 1;
+}
+
+.information-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.information-container h1 {
+  font-size: 65px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0);
+}
+
+.information-container .text {
+  font-size: 1.4em;
+  margin-bottom: 55px;
+  font-weight: 600;
+  text-shadow: 0 0 0 rgb(0, 0, 0);
+}
+
+.download-button {
+  border: 3px solid black;
+  padding: 10px 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.app-img-container {
+  display: flex;
+  justify-content: flex-end;
+}
