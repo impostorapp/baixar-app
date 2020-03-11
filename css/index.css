@@ -71,7 +71,7 @@ section {
 }
 
 section .introduction {
-  flex: 0 1 500px;
+  flex: 0 1 480px;
 }
 
 section .text-container {
@@ -89,7 +89,7 @@ section h2 {
 }
 
 section .icons-container {
-  margin-top: 60px;
+  margin-top: 30px;
   padding: 0 25%;
   display: flex;
   justify-content: space-around;
@@ -127,6 +127,7 @@ section .icons-container {
 
   .information-container {
     margin-bottom: 10%;
+    justify-content: center;
   }
 
   body main div.app-img-container {
@@ -136,7 +137,7 @@ section .icons-container {
   body main div.app-img-container img {
     height: 80%;
     position: absolute;
-    top: 80%;
+    top: 75%;
   }
 
   section {
@@ -151,7 +152,12 @@ section .icons-container {
 
 @media screen and (max-width: 550px) {
   main {
-    padding: 75px 12% 0 8%;
+    padding: 75px 10% 0 10%;
+  }
+
+  body main div.app-img-container img {
+    height: 600px;
+    top: 78%;
   }
 
   .information-container {
@@ -159,10 +165,68 @@ section .icons-container {
   }
 
   .information-container h1 {
-    font-size: 55px;
+    font-size: 50px;
   }
 
   .information-container .text {
-    font-size: 1.4em;
+    font-size: 1.5em;
+  }
+
+  section {
+    padding: 95% 10% 0 10%;
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon img {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main {
+    padding: 55px 10% 0 10%;
+  }
+
+  body main div.app-img-container img {
+    height: 450px;
+    top: 78%;
+  }
+
+  .information-container {
+    margin-bottom: 55px;
+  }
+
+  .information-container h1 {
+    font-size: 35px;
+  }
+
+  .information-container .text {
+    font-size: 1.5em;
+    margin-bottom: 35px;
+  }
+
+  section {
+    padding: 90% 10% 0 10%;
+  }
+
+  section h2 {
+    font-size: 40px;
+  }
+
+  section p {
+    font-size: 0.9em;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon img {
+    width: 25px;
   }
 }
