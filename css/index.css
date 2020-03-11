@@ -39,7 +39,7 @@ main div {
   font-size: 1.4em;
   margin-bottom: 55px;
   font-weight: 600;
-  text-shadow: 0 0 0 rgb(0, 0, 0);
+  text-shadow: 0 0 0 #000000;
 }
 
 .download-button {
@@ -126,7 +126,26 @@ section .icons-container {
   }
 
   .information-container {
-    margin-bottom: 90px;
+    margin-bottom: 10%;
+  }
+
+  body main div.app-img-container {
+    justify-content: center;
+  }
+
+  body main div.app-img-container img {
+    height: 80%;
+    position: absolute;
+    top: 80%;
+  }
+
+  section {
+    flex-direction: column;
+    padding: 380px 15% 0 15%;
+  }
+
+  section .introduction {
+    flex: 0 1 430px;
   }
 }
 
