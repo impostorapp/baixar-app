@@ -49,6 +49,12 @@ main div {
   cursor: pointer;
 }
 
+.download-button:hover {
+  color: #0652a5;
+  border-color: #0652a5;
+  transition: ease-in-out 1s;
+}
+
 .app-img-container {
   display: flex;
   justify-content: flex-end;
