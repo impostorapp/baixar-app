@@ -19,7 +19,8 @@
         Ao baixar este APK, você será um dos primeiros a testar o app Impostor. Agradecemos o seu feedback! =)
       </p>
 
-      <a class="download-button">
+      <a href="./assets/impostorapp-61836bc6936d4c93847a52c0d8866fcd-signed.apk" onclick="notifyDownload()" href=""
+        download class="download-button">
         <p>DOWNLOAD</p>
       </a>
     </div>
@@ -75,6 +76,18 @@
       </div>
     </div>
   </section>
+
+  <script>
+    function notifyDownload() {
+      const URL = 'https://impostor-backend.herokuapp.com/api/page/new-download'
+
+      fetch(URL, {
+        method: 'get'
+      })
+        .then(res => console.log(res))
+        .catch(err => console.log(err))
+    }
+  </script>
 </body>
 
 </html>
